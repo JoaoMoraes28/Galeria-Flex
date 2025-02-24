@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+header {
+    height: 100px;
+}
+
+galeria div {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+h1 {
+    height: 100%;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    flex-grow: 1;
+}
+
+.galeria {
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+    display: flex;
+}
+
+.foto {
+    width: 25%;
+    height: 100%;
+    border: 2px solid #fff;
+}
+
+.container-direita {
+    flex-grow: 1;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+}
+
+.container-superior {
+    background-color: pink;
+    flex-grow: 1;
+    display: flex;
+}
+
+.container-superior-esquerdo {
+    flex-grow: 2;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-superior-esquerdo>.foto {
+    background-color: aquamarine;
+    height: 50%;
+    width: 50%;
+}
+
+.container-superior-esquerdo .foto:nth-of-type(1) {
+    width: 100%;
+}
+
+.container-superior>.foto {
+    width: 33%;
+}
+
+.container-inferior {
+    flex-grow: 1;
+    background-color: yellow;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-inferior .foto {
+    background-color: azure;
+    height: 50%;
+    width: 33.5%;
+ 
+}
+
+.container-inferior-esquerdo>.foto:nth-of-type(3) {
+    height: 100%;
+    width: 66.3%;
+    
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev {
+    font-size: 1rem;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
